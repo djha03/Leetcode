@@ -15,11 +15,11 @@ public:
         
          int minimum = INT_MAX;
 
-        // Nested loop for O(n^2) complexity
+       
         for (int i = 0; i < nums.size(); i++) {
             for (int j = i; j < nums.size(); j++) {
-                if (nums[j] < minimum) {
-                    minimum = nums[j];
+                if (nums[i] < minimum) {
+                    minimum = nums[i];
                 }
             }
         }
